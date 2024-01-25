@@ -43,7 +43,7 @@ export default function Home() {
             className="underline duration-500 hover:text-zinc-300"
           >
             Join Now
-            ></Link>
+            </Link>
       </div>
     </div>
   );
