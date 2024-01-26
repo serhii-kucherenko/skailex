@@ -4,7 +4,7 @@ import Particles from "./components/particles";
 
 const navigation = [
   { name: "Projects", href: "/projects" },
-  { name: "Contact", href: "/contact" },
+  { name: "Contacts", href: "/contacts" },
 ];
 
 export default function Home() {
@@ -26,26 +26,28 @@ export default function Home() {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <Particles
         className="absolute inset-0 -z-10 animate-fade-in"
-        quantity={100}
+        quantity={500}
       />
-      <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
+      <h1 className="z-10 text-4xl text-transparent duration-800 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
         Skailex
       </h1>
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <div className="my-16 text-center animate-fade-in">
-        <h2 className="text-sm text-zinc-500 ">
-          We Drive Digital Transformation through Web and Mobile Expertise
+
+      <div className="my-10 text-center animate-fade-in">
+        <h2 className="mb-6 text-sm text-zinc-500 mb-2 z-10 duration-1500 bg-white cursor-default animate-subtitle bg-clip-text">
+          Build Online Presence | Web & Mobile Solutions | Process Automation |
+          Tech Consulting
         </h2>
+
         <Link
-            target="_blank"
-            href="https://www.linkedin.com/in/serhii-kucherenko/"
-            className="underline duration-500 hover:text-zinc-300"
-          >
-            Join Now
-            </Link>
+          target="_blank"
+          href="mailto:contact@skailex.com"
+          className="text-xl underline duration-500 text-zinc-500 hover:text-zinc-300 animate-subtitle"
+        >
+          Contact Us
+        </Link>
       </div>
     </div>
   );
-
 }

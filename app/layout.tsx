@@ -6,19 +6,20 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "chronark.com",
-    template: "%s | chronark.com",
+    default: "Skailex | Custom Software Development & IT Services",
+    template: "%s | Skailex",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description:
+    "Skailex offers custom software development, web development, mobile app development, and IT services. We specialize in innovation, digital transformation, and quality assurance.",
   openGraph: {
-    title: "chronark.com",
+    title: "Skailex | Custom Software Development & IT Services",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+      "Skailex offers custom software development, web development, mobile app development, and IT services. We specialize in innovation, digital transformation, and quality assurance.",
+    url: "https://skailex.com",
+    siteName: "Skailex",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "https://skailex.com/og.png",
         width: 1920,
         height: 1080,
       },
@@ -38,13 +39,14 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "Skailex | Custom Software Development & IT Services",
     card: "summary_large_image",
   },
   icons: {
     shortcut: "/favicon.png",
   },
 };
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -66,8 +68,9 @@ export default function RootLayout({
         <Analytics />
       </head>
       <body
-        className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-          }`}
+        className={`bg-black ${
+          process.env.NODE_ENV === "development" ? "debug-screens" : undefined
+        }`}
       >
         {children}
       </body>
