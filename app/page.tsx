@@ -42,10 +42,10 @@ export default function Home() {
 
         <Link
           target="_blank"
-          href="mailto:contact@skailex.com"
+          href="https://calendly.com/serhii-kucherenko/30-min-meeting"
           className="text-xl underline duration-500 text-zinc-500 hover:text-zinc-300 animate-subtitle"
         >
-          Contact Us
+          Contact Now
         </Link>
       </div>
     </div>

@@ -1,15 +1,15 @@
 "use client";
-import { Github, Mail, Twitter } from "lucide-react";
+import { Group, Mail, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 
 const socials = [
   {
-    icon: <Twitter size={20} />,
-    href: "https://twitter.com/kucherenko_web",
-    label: "Twitter",
-    handle: "@kucherenko_web",
+    icon: <Linkedin size={20} />,
+    href: "https://www.linkedin.com/company/skailex",
+    label: "Linkedin",
+    handle: "LinkedIn",
   },
   {
     icon: <Mail size={20} />,
@@ -18,10 +18,10 @@ const socials = [
     handle: "contact@skailex.com",
   },
   {
-    icon: <Github size={20} />,
-    href: "https://github.com/serhii-kucherenko",
-    label: "Github",
-    handle: "serhii-kucherenko",
+    icon: <Group size={20} />,
+    href: "https://calendly.com/serhii-kucherenko/30-min-meeting",
+    label: "Calendly",
+    handle: "Book a meeting",
   },
 ];
 
