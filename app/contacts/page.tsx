@@ -1,5 +1,5 @@
 "use client";
-import { Group, Mail, Linkedin } from "lucide-react";
+import { Presentation, Mail, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -18,7 +18,7 @@ const socials = [
     handle: "contact@skailex.com",
   },
   {
-    icon: <Group size={20} />,
+    icon: <Presentation size={20} />,
     href: "https://calendly.com/serhii-kucherenko/30-min-meeting",
     label: "Calendly",
     handle: "Book a meeting",
