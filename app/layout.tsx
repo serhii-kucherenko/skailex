@@ -6,7 +6,7 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "Skailex | Custom Software Development & IT Services",
+    default: "Skailex | Web, Mobile Development, Design & IT Services",
     template: "%s | Skailex",
   },
   description:
