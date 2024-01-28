@@ -1,5 +1,5 @@
 "use client";
-import { ArrowLeft, Eye, Github, Twitter } from "lucide-react";
+import { ArrowLeft, Eye, Presentation, Linkedin } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -18,18 +18,14 @@ export const Header: React.FC<Props> = ({ project, views }) => {
   const [isIntersecting, setIntersecting] = useState(true);
 
   const links: { label: string; href: string }[] = [];
-  if (project.repository) {
-    links.push({
-      label: "GitHub",
-      href: `https://github.com/${project.repository}`,
-    });
-  }
+
   if (project.url) {
     links.push({
       label: "Website",
       href: project.url,
     });
   }
+
   useEffect(() => {
     if (!ref.current) return;
     const observer = new IntersectionObserver(([entry]) =>
@@ -67,8 +63,11 @@ export const Header: React.FC<Props> = ({ project, views }) => {
                 views
               )}
             </span>
-            <Link target="_blank" href="https://twitter.com/kucherenko_web">
-              <Twitter
+            <Link
+              target="_blank"
+              href="https://www.linkedin.com/company/skailex"
+            >
+              <Linkedin
                 className={`w-6 h-6 duration-200 hover:font-medium ${
                   isIntersecting
                     ? " text-zinc-400 hover:text-zinc-100"
@@ -76,8 +75,11 @@ export const Header: React.FC<Props> = ({ project, views }) => {
                 } `}
               />
             </Link>
-            <Link target="_blank" href="https://github.com/serhii-kucherenko">
-              <Github
+            <Link
+              target="_blank"
+              href="https://calendly.com/serhii-kucherenko/30-min-meeting"
+            >
+              <Presentation
                 className={`w-6 h-6 duration-200 hover:font-medium ${
                   isIntersecting
                     ? " text-zinc-400 hover:text-zinc-100"
