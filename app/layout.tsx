@@ -10,11 +10,11 @@ export const metadata: Metadata = {
     template: "%s | Skailex",
   },
   description:
-    "Skailex offers custom software development, web development, mobile app development, and IT services. We specialize in innovation, digital transformation, and quality assurance.",
+    "Skailex offers custom software development, web development, mobile app development, web design, mobile app design, UI/UX prototyping and IT services. We specialize in innovation, digital transformation, and quality assurance.",
   openGraph: {
     title: "Skailex | Custom Software Development & IT Services",
     description:
-      "Skailex offers custom software development, web development, mobile app development, and IT services. We specialize in innovation, digital transformation, and quality assurance.",
+      "Skailex offers custom software development, web development, mobile app development, web design, mobile app design, UI/UX prototyping and IT services. We specialize in innovation, digital transformation, and quality assurance.",
     url: "https://skailex.com",
     siteName: "Skailex",
     images: [
