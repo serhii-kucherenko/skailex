@@ -75,10 +75,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
                 } `}
               />
             </Link>
-            <Link
-              target="_blank"
-              href="https://calendly.com/serhii-kucherenko/30-min-meeting"
-            >
+            <Link target="_blank" href="https://calendly.com/skailex/30min">
               <Presentation
                 className={`w-6 h-6 duration-200 hover:font-medium ${
                   isIntersecting

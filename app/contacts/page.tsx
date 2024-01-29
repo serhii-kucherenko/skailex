@@ -19,7 +19,7 @@ const socials = [
   },
   {
     icon: <Presentation size={20} />,
-    href: "https://calendly.com/serhii-kucherenko/30-min-meeting",
+    href: "https://calendly.com/skailex/30min",
     label: "Calendly",
     handle: "Book a meeting",
   },

@@ -42,7 +42,7 @@ export default function Home() {
 
         <Link
           target="_blank"
-          href="https://calendly.com/serhii-kucherenko/30-min-meeting"
+          href="https://calendly.com/skailex/30min"
           className="text-xl underline duration-500 text-zinc-500 hover:text-zinc-300 animate-subtitle"
         >
           Contact Now
