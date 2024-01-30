@@ -62,9 +62,18 @@ export const Page = defineDocumentType(() => ({
 	computedFields,
 }));
 
+export const PrivacyPolicy = defineDocumentType(() => ({
+	name: "PrivacyPolicy",
+	filePathPattern: "./privacy-policy/**/*.mdx",
+	contentType: "mdx",
+
+	fields: {},
+	computedFields,
+}));
+
 export default makeSource({
 	contentDirPath: "./content",
-	documentTypes: [Page, Project],
+	documentTypes: [Page, Project, PrivacyPolicy],
 	mdx: {
 		remarkPlugins: [remarkGfm],
 		rehypePlugins: [
