@@ -19,9 +19,6 @@ const redis = Redis.fromEnv();
 export default async function PostPage({ params }: Props) {
   const slug = params?.slug;
   const privacyPolicy = allPrivacyPolicies?.[0];
-  console.log({
-    allPrivacyPolicies,
-  });
 
   if (!privacyPolicy) {
     notFound();
